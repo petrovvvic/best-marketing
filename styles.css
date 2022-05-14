@@ -70,6 +70,18 @@ header {
     width: 100%;
 }
 
+.q-card {
+    display: flex;
+    width: 330px;
+    height: 130px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgba(253, 237, 232, 0.8) 0%, rgba(255, 237, 255, 0.8) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
 .center-center {
     justify-content: center;
     align-items: center;
@@ -317,4 +329,70 @@ header {
     width: 640px;
     height: 200px;
     border-radius: 150px;
+}
+
+.why-text {
+    margin-left: -140px;
+}
+
+.why-vector {
+    height: 110px;
+    width: 110px;
+}
+
+.why-btn {
+    height: 80px;
+    width: 390px;
+    background: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
+}
+
+.portfolio-grid {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 1.3em;
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/1мокап.png), linear-gradient(90deg, rgba(250, 208, 196, 0.5) 0%, rgba(250, 208, 196, 0.5) 1%, rgba(255, 209, 255, 0.5) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 360px;
+    height: 315.51px;
+    position: relative;
+}
+
+.overlay {
+    z-index: 999999;
+    opacity: 0;
+    background: #4A2C5E;
+    border-radius: 20px;
+}
+
+.overlay:hover {
+    opacity: 0.6;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 19%;
+}
+
+.look-btn {
+    border: 0px solid;
+    width: 200px;
+    height: 53px;
+    position: absolute;
+    position: absolute;
+    left: 24%;
+    top: 50%;
+}
+
+.d-none {
+    display: none;
 }
