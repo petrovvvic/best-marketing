@@ -14,6 +14,10 @@ a {
     color: #FFFFFF;
 }
 
+p {
+    margin: 0;
+}
+
 .end {
     align-items: flex-end;
 }
@@ -93,6 +97,10 @@ header {
 }
 
 .curved-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
 }
@@ -121,12 +129,21 @@ header {
     font-weight: 700;
 }
 
+.m-0 {
+    margin: 0;
+}
+
 .higlight-text {
     margin: 0;
 }
 
 .logo-icon {
     width: 62px;
+}
+
+.main-img {
+    width: 560px;
+    height: 460px;
 }
 
 .rectangle {
@@ -143,4 +160,50 @@ header {
     /* height: 50px; */
     /* left: 101px; */
     top: 73px;
+}
+
+.main-img {
+    margin-left: -5%;
+}
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.title-text {
+    font-size: 60px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.text-block {
+    margin-left: 4%;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.test-btn {
+    width: 340px;
+    height: 80px;
+}
+
+.bg-purple-gradient {
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+}
+
+.main-btn-container {
+    gap: 1%;
+}
+
+.ws-nw {
+    white-space: nowrap;
 }
