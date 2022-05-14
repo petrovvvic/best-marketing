@@ -138,7 +138,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid #FFFFFF;
+    border: 2px solid none;
     border-radius: 50px;
 }
 
@@ -372,10 +372,15 @@ header {
     opacity: 0;
     background: #4A2C5E;
     border-radius: 20px;
+    transition: 0.5s ease-out 100ms;
+}
+
+.mt-100 {
+    margin-top: 100px;
 }
 
 .overlay:hover {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 .overlay-text {
@@ -395,4 +400,66 @@ header {
 
 .d-none {
     display: none;
+}
+
+.price-container {
+    margin: 55px auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    height: 670px;
+    width: 1217px;
+    background: gray;
+    border-radius: 20px;
+}
+
+.price-manager {
+    width: 405px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+    border-radius: 20px 0px 0px 20px;
+}
+
+.manager-info {
+    margin-top: 35px;
+    gap: 10px;
+}
+
+.manager {
+    margin-top: 30px;
+    width: 370px;
+    height: 340px;
+    background: rgba(248, 235, 255, 0.5);
+    border-radius: 10px;
+}
+
+.p-manager {
+    margin-top: 8px;
+    width: 318px
+}
+
+.manager-btn {
+    width: 318px;
+}
+
+.manager-help {
+    gap: 18px;
+}
+
+.bonus {
+    font-size: 28px;
+    margin-top: 29px;
+}
+
+.bonus-title {
+    margin: 0px auto;
+    width: 300px;
+}
+
+.bonus-item {
+    color: white;
+    font-size: 18px;
+    gap: 14px;
+    margin-top: 22px;
+}
+
+.manager-footer-btn {
+    width: 491px;
 }
