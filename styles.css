@@ -19,6 +19,20 @@ a {
     color: #FFFFFF;
 }
 
+ul {
+    padding: 0;
+    list-style: none;
+    color: linear-gradient(90deg, #A28DD2 0%, #FAC1EB 100%);
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    align-items: baseline;
+    margin-bottom: 22px;
+}
+
 p {
     margin: 0;
 }
@@ -552,4 +566,119 @@ header {
 
 .active {
     background: #FF928E;
+}
+
+.progress-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.progress-line {
+    width: 1px;
+    opacity: 1;
+    background: #F99185;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-item-text {
+    position: absolute;
+    left: 39px;
+    top: 56px;
+    gap: 20px;
+}
+
+.line-1 {}
+
+.line-2 {}
+
+.progress-grid {
+    margin: 76px auto;
+    width: 1245px;
+    height: 875px;
+    grid-column-gap: 40px;
+}
+
+.progress-bar-1 {
+    gap: 40px;
+}
+
+.step {
+    color: #5A3772;
+    background: #FAD0C4;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+}
+
+.progress-item {
+    position: relative;
+    background: linear-gradient(360deg, #FDEDE8 0%, #FFEDFF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    width: 550px;
+    height: 277px;
+}
+
+.actions {
+    height: 140px;
+    background: linear-gradient(90deg, #A18CD1 0%, #FBC2EB 100%);
+    color: white;
+}
+
+.actions-card {
+    width: 433px;
+    height: 1100px;
+    border-radius: 20px;
+}
+
+.standart {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(360deg, rgba(162, 141, 210, 0.3) 0%, rgba(250, 193, 235, 0.3) 100%);
+}
+
+.actions-row {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.actions-card-wrapper {
+    margin: 39px 0px 0px 39px;
+}
+
+.actions-card-wrapper:first-child {
+    margin-bottom: 49px;
+}
+
+.list-circle {
+    background: linear-gradient(90deg, #A28DD2 0%, #FAC1EB 100%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+}
+
+.card-btn {
+    width: 200px;
+    height: 50px;
+}
+
+.card-footer {
+    width: 349px;
+}
+
+.explain {
+    width: 1057px;
+    margin: 80px auto;
+}
+
+.explain-item-text {
+    border-left: 2px solid #5A3772;
+    padding-left: 20px;
+}
+
+.explain-container {
+    background: rgb(255, 209, 255, 0.2);
+    -webkit-backdrop-filter: blur(300px);
+    backdrop-filter: blur(300px);
 }
