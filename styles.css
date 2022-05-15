@@ -404,10 +404,9 @@ header {
 
 .price-container {
     margin: 55px auto;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     height: 670px;
     width: 1217px;
-    background: gray;
     border-radius: 20px;
 }
 
@@ -460,6 +459,97 @@ header {
     margin-top: 22px;
 }
 
+.fs-32 {
+    font-size: 32px;
+}
+
 .manager-footer-btn {
     width: 491px;
+}
+
+.price-goal {
+    width: calc( 1217px - 405px);
+    border-radius: 20px;
+}
+
+.goal-title {
+    margin-top: 20px;
+}
+
+.goal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.goal-item {
+    display: flex;
+}
+
+.round-check {
+    position: relative;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.round-check label {
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 30px;
+    left: -1px;
+    position: absolute;
+    top: -5px;
+    width: 30px;
+    border: 2px solid #C2B3CD;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.goal-img {
+    width: 240px;
+    height: 160px;
+    display: block;
+    border-radius: 10px;
+}
+
+.goal-check {
+    margin-top: 10px;
+}
+
+.round-check input[type="checkbox"]:checked+label {
+    background: linear-gradient(90deg, #FF9A9E 0%, #FAD0C4 99%, #FAD0C4 100%);
+}
+
+.goal-footer {
+    gap: 284px;
+    margin-top: 40px;
+}
+
+.goal-footer-btn {
+    width: 200px;
+    height: 53px;
+}
+
+.stage-row {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stage {
+    height: 10px;
+    width: 30px;
+    background: #FFDDE1;
+    border-radius: 4px;
+}
+
+.active {
+    background: #FF928E;
 }
