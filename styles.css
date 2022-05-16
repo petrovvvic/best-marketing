@@ -55,6 +55,7 @@ header {
     position: absolute;
     right: 0;
     top: 0%;
+    height: 205px !important;
 }
 
 .d-block {
@@ -69,8 +70,13 @@ header {
     color: #5A3772;
 }
 
+.tablet-show {
+    display: none;
+}
+
 .margin-m80 {
-    margin-left: -80px;
+    text-align: end;
+    margin-left: -28px;
 }
 
 .svg-vector {
@@ -638,8 +644,11 @@ header {
 
 .actions-row {
     margin-top: 20px;
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
 }
 
 .actions-card-wrapper {
@@ -736,6 +745,11 @@ header {
 
 .how-wrapper {
     margin: 50px auto;
+}
+
+.start-btn {
+    height: 80px;
+    width: 340px;
 }
 
 .big {
@@ -846,12 +860,12 @@ header {
 
 @media (max-width:1300px) {
     .vector {
-        height: 131.12274169921875px;
-        width: 242.61561584472656px;
+        height: 131px !important;
+        width: 242px;
     }
     .svg-vector {
-        height: 131.12274169921875px;
-        width: 242.61561584472656px;
+        height: 131px !important;
+        width: 242px;
     }
     .contact {
         width: calc(100% - 242px)
@@ -859,6 +873,7 @@ header {
     .start-button {
         width: 128px;
         height: 33px;
+        margin-right: 23px;
     }
     .fs-42 {
         font-size: 26px;
@@ -870,7 +885,7 @@ header {
         display: none;
     }
     .fs-22 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .logo-icon {
         width: 30px;
@@ -887,7 +902,7 @@ header {
     }
     .main-img {
         height: 229.27734375px;
-        width: 280px;
+        width: 267px;
     }
     .title-text {
         font-size: 32px;
@@ -922,4 +937,201 @@ header {
         text-align: center;
         flex-direction: column;
     }
+    .main-advantage {
+        gap: 10px;
+    }
+    .margin-m80 {
+        font-size: 10px;
+    }
+    .tablet-text-center {
+        text-align: center;
+    }
+    .test-btn {
+        width: 300px;
+        height: 80px;
+        margin-top: 10px
+    }
+    .start-btn {
+        width: 200px;
+        height: 50px;
+        margin-right: 23px;
+    }
+    .number {
+        font-size: 60px;
+    }
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 20px
+    }
+    .price-manager {
+        width: 654px;
+        border-radius: 20px;
+        height: 327px;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-evenly;
+    }
+    .price-container {
+        flex-direction: column;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .manager {
+        width: 308px;
+        height: 281px !important;
+        margin-top: 16px;
+        margin-bottom: 30px;
+    }
+    .manager-btn {
+        width: 230px;
+        height: 60px;
+        font-size: 16px;
+    }
+    .p-manager {
+        width: 227px;
+    }
+    .tablet-mb-100 {
+        margin-bottom: 20px;
+    }
+    .price-container {
+        box-shadow: none;
+        margin: 152px auto
+    }
+    .price-goal {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .goal-footer-btn {
+        width: 200px;
+        height: 53.33px;
+    }
+    .tablet-26 {
+        font-size: 26px;
+    }
+    .manager-footer-btn {
+        width: 406px;
+    }
+    .progress-grid {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .progress-item-list {
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .progress-container {
+        margin-top: 76px;
+    }
+    .progress-title {
+        margin-bottom: 393px;
+    }
+    .progress-footer {
+        margin-top: 400px;
+    }
+    .margin-m80 {
+        font-size: 12px;
+    }
+    .actions-row {
+        margin-top: 20px;
+        display: flex;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    li {
+        font-size: 20px;
+    }
+    .actions-card {
+        margin-bottom: 80px;
+    }
+    .explain {
+        width: 650px;
+    }
+    .portfolio-grid {
+        grid-column-gap: 2em
+    }
+    .how-grid {
+        display: flex;
+        width: 100%;
+        margin-bottom: 17px;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 19px;
+    }
+    .how-item {
+        width: 660px;
+    }
+    .tablet-hide {
+        display: none
+    }
+    .tablet-show {
+        margin-left: 20px;
+    }
+    .how-item {
+        justify-content: flex-start;
+    }
+    .m-l-20 {
+        margin-left: 33px;
+    }
+    .offer-item {
+        width: 320px;
+        height: 260px;
+        color: #4A2C5E;
+    }
+    .offer-grid {
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+        width: auto;
+    }
+    .fs-20 {
+        font-size: 18px;
+    }
+    .offer-item p {
+        width: 250px;
+    }
+    .offer-item p br {
+        display: none;
+    }
+    .footer-from {
+        flex-direction: column;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .q-q {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .q-column {
+        gap: 20px;
+    }
+    .q-card {
+        margin-bottom: 20px;
+    }
+    .g-2 {
+        margin-left: 26px;
+    }
 }
+
+@media (max-width:780px) {}
